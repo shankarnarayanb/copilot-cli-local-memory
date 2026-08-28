@@ -1,0 +1,21 @@
+# Changelog
+
+All notable changes to this project are documented here.
+
+## 1.0.0 - 2026-08-28
+
+- Added `/remember`, `/memories`, and `/forget` commands.
+- Added scoped memories and ranked, bounded recall.
+- Added natural-language remember and recall tools.
+- Added duplicate detection, secret detection, and ambiguity-safe deletion.
+- Added macOS/Linux and Windows installation scripts.
+- Added safe uninstall scripts that preserve memories unless explicitly purged.
+- Added real Copilot CLI demonstrations for natural-language and slash-command workflows.
+- Expanded usage, architecture, privacy, troubleshooting, and data-location
+  documentation.
+- Added a prominent explanation of `/memory` versus `/memories`.
+- Added Codex and Claude Code compatibility guidance.
+- Added author attribution and repository metadata.
+- Added extension registration and storage tests.
+- Added contribution, security, issue, and pull request guidance for a public repo.
+- Added GitHub Actions coverage for supported Node.js releases.
