@@ -1,0 +1,19 @@
+{
+  "name": "copilot-cli-local-memory",
+  "description": "Local, explicit, human-readable cross-session memory for GitHub Copilot CLI.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Shankar Balakrishna",
+    "url": "https://github.com/shankarnarayanb"
+  },
+  "homepage": "https://github.com/shankarnarayanb/copilot-cli-local-memory",
+  "repository": "https://github.com/shankarnarayanb/copilot-cli-local-memory",
+  "license": "MIT",
+  "keywords": [
+    "copilot-cli",
+    "memory",
+    "local-first",
+    "developer-tools"
+  ],
+  "category": "productivity"
+}

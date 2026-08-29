@@ -16,6 +16,7 @@ import test from "node:test";
 
 const execFileAsync = promisify(execFile);
 const packageRoot = dirname(dirname(fileURLToPath(import.meta.url)));
+const extensionRoot = join(packageRoot, "extensions", "local-memory");
 
 test("extension registers Copilot commands and natural-language tools", async () => {
     const root = await mkdtemp(join(tmpdir(), "copilot-local-memory-extension-"));
@@ -24,9 +25,9 @@ test("extension registers Copilot commands and natural-language tools", async ()
 
     try {
         await mkdir(sdkDir, { recursive: true });
-        await copyFile(join(packageRoot, "extension.mjs"), join(root, "extension.mjs"));
+        await copyFile(join(extensionRoot, "extension.mjs"), join(root, "extension.mjs"));
         await copyFile(
-            join(packageRoot, "memory-store.mjs"),
+            join(extensionRoot, "memory-store.mjs"),
             join(root, "memory-store.mjs"),
         );
         await writeFile(

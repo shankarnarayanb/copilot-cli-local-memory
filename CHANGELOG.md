@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here.
 
+## 1.1.0 - 2026-08-29
+
+- Added a standard Copilot CLI `plugin.json` manifest and conventional
+  `extensions/local-memory/` package layout.
+- Added one-command installation with `copilot plugin install`.
+- Kept the original installers as a fallback and migration path.
+- Added automated checks for plugin metadata and packaged extension files.
+- Documented plugin upgrades, removal, and preservation of saved memories.
+
 ## 1.0.0 - 2026-08-28
 
 - Added `/remember`, `/memories`, and `/forget` commands.

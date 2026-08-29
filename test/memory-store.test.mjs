@@ -8,7 +8,7 @@ import {
     createMemoryStore,
     detectSensitiveValue,
     MemoryValidationError,
-} from "../memory-store.mjs";
+} from "../extensions/local-memory/memory-store.mjs";
 
 async function withStore(run) {
     const root = await mkdtemp(join(tmpdir(), "copilot-local-memory-"));

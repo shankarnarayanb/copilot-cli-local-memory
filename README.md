@@ -24,9 +24,56 @@ Copilot Memory but still permits local extensions and custom instructions.
 
 ## Quick start
 
-Requires GitHub Copilot CLI with experimental extensions enabled and Node.js 20
-or newer. This is a Copilot CLI **extension**, not an installable Copilot plugin;
-the included scripts place it in Copilot's documented user extension directory.
+Requires GitHub Copilot CLI with plugin support, experimental extensions enabled,
+and Node.js 20 or newer.
+
+### Install as a Copilot CLI plugin
+
+```text
+copilot plugin install shankarnarayanb/copilot-cli-local-memory
+copilot --experimental
+```
+
+The plugin bundles the extension directly. There is no separate `npm install`,
+database, server, or runtime dependency to configure.
+
+Inside Copilot CLI, confirm that both the plugin and extension are available:
+
+```text
+/plugin list
+/extensions manage
+```
+
+Then save your first caveat:
+
+```text
+/remember When the Saviynt access token expires, refresh it once and retry.
+/memories Saviynt
+```
+
+### Upgrading from the v1.0 script installer
+
+Remove the old extension copy before installing the plugin so Copilot does not
+load the same commands twice. The uninstall script keeps your saved memories.
+
+Windows PowerShell:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File ./uninstall.ps1
+copilot plugin install shankarnarayanb/copilot-cli-local-memory
+```
+
+macOS or Linux:
+
+```bash
+sh uninstall.sh
+copilot plugin install shankarnarayanb/copilot-cli-local-memory
+```
+
+### Legacy script installation
+
+If your Copilot CLI version does not yet support plugins, the original scripts
+can still place the extension in Copilot's documented user extension directory.
 
 ### macOS or Linux
 
@@ -50,13 +97,6 @@ Inside Copilot CLI, confirm that the extension is running:
 
 ```text
 /extensions manage
-```
-
-Then save your first caveat:
-
-```text
-/remember When the Saviynt access token expires, refresh it once and retry.
-/memories Saviynt
 ```
 
 The installer copies only `extension.mjs` and `memory-store.mjs` to
@@ -241,7 +281,17 @@ npm test
 
 ## Uninstall
 
-Saved memories are kept by default.
+For a plugin installation:
+
+```text
+copilot plugin uninstall copilot-cli-local-memory
+```
+
+Saved memories are kept by default, so reinstalling the plugin restores access
+to them. Delete individual entries with `/forget` before uninstalling if you do
+not want to retain them.
+
+For an installation made with the legacy scripts:
 
 ### macOS or Linux
 
