@@ -14,9 +14,14 @@ test("plugin manifest packages the Copilot CLI extension", async () => {
         await readFile(join(packageRoot, "package.json"), "utf8"),
     );
 
+    assert.equal(
+        manifest.$schema,
+        "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    );
     assert.equal(manifest.name, "copilot-cli-local-memory");
     assert.equal(manifest.version, packageMetadata.version);
     assert.equal(manifest.extensions, undefined);
+    assert.equal(manifest.category, undefined);
     assert.equal(manifest.license, "MIT");
     assert.equal(manifest.repository, packageMetadata.repository.url.replace(/\.git$/, ""));
     assert.match(manifest.description, /local/i);

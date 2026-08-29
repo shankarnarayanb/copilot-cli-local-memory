@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented here.
 
+## 1.1.1 - 2026-08-29
+
+- Added the Agent Plugins v1.0.0 schema declaration to `plugin.json`.
+- Removed the non-standard `category` field so the manifest passes schema
+  validation without warnings.
+
 ## 1.1.0 - 2026-08-29
 
 - Added a standard Copilot CLI `plugin.json` manifest and conventional
