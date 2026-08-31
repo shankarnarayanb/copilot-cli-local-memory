@@ -325,6 +325,13 @@ Both uninstallers respect `COPILOT_HOME`.
 - [Security policy](SECURITY.md)
 - [Changelog](CHANGELOG.md)
 
+## Citation and provenance
+
+The project's design scope, public release chronology, and relationship to
+earlier Copilot memory proposals are recorded in
+[Design and provenance](DESIGN-AND-PROVENANCE.md). Machine-readable citation
+metadata is available in [CITATION.cff](CITATION.cff).
+
 ## Author
 
 Created and maintained by [Shankar Balakrishna](https://github.com/shankarnarayanb).

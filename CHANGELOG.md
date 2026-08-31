@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented here.
 
+## Unreleased
+
+- Added machine-readable citation metadata in `CITATION.cff`.
+- Documented the project's design scope, release chronology, and relationship
+  to earlier Copilot memory proposals.
+- Added the copyright holder's name to the MIT licence.
+
 ## 1.1.1 - 2026-08-29
 
 - Added the Agent Plugins v1.0.0 schema declaration to `plugin.json`.
