@@ -11,6 +11,7 @@ url: "https://github.com/shankarnarayanb/copilot-cli-local-memory"
 license: MIT
 version: 1.1.2
 date-released: 2026-08-31
+doi: "10.5281/zenodo.22216323"
 keywords:
   - "GitHub Copilot CLI"
   - "local memory"

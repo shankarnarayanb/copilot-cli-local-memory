@@ -5,6 +5,7 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js 20+](https://img.shields.io/badge/node-%3E%3D20-339933.svg)](package.json)
 [![Tests](https://github.com/shankarnarayanb/copilot-cli-local-memory/actions/workflows/test.yml/badge.svg)](https://github.com/shankarnarayanb/copilot-cli-local-memory/actions/workflows/test.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22216323.svg)](https://doi.org/10.5281/zenodo.22216323)
 
 Local, persistent, human-readable memory with explicit commands and no server,
 database, telemetry, or network calls.
@@ -330,7 +331,9 @@ Both uninstallers respect `COPILOT_HOME`.
 The project's design scope, public release chronology, and relationship to
 earlier Copilot memory proposals are recorded in
 [Design and provenance](DESIGN-AND-PROVENANCE.md). Machine-readable citation
-metadata is available in [CITATION.cff](CITATION.cff).
+metadata is available in [CITATION.cff](CITATION.cff). Release `v1.1.2` is
+archived by [Zenodo](https://doi.org/10.5281/zenodo.22216323) and
+[Software Heritage](https://archive.softwareheritage.org/swh:1:dir:79e7189194b5fe1a9e36332064f91a3ceee09541).
 
 ## Author
 

@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## Unreleased
+
+- Added the Zenodo DOI and Software Heritage archive identifier for `v1.1.2`.
+
 ## 1.1.2 - 2026-08-31
 
 - Added machine-readable citation metadata in `CITATION.cff`.

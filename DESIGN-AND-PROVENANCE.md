@@ -61,6 +61,18 @@ record:
 The external-plugin review is also public in
 [`github/awesome-copilot#2859`](https://github.com/github/awesome-copilot/issues/2859).
 
+## Independent preservation
+
+Release `v1.1.2` is preserved outside GitHub in two independently addressable
+records:
+
+- **Zenodo:** [DOI 10.5281/zenodo.22216323](https://doi.org/10.5281/zenodo.22216323)
+- **Software Heritage:**
+  [`swh:1:dir:79e7189194b5fe1a9e36332064f91a3ceee09541`](https://archive.softwareheritage.org/swh:1:dir:79e7189194b5fe1a9e36332064f91a3ceee09541)
+
+The Zenodo record contains the source archive for Git commit `25d7885` and
+initiated the corresponding Software Heritage preservation record.
+
 ## Relationship to earlier proposals
 
 The broader need for persistent or local Copilot CLI memory was discussed
