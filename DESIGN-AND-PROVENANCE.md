@@ -54,6 +54,9 @@ record:
 - **v1.1.1 — 29 August 2026:** aligned `plugin.json` with the Agent Plugins
   v1.0.0 schema, commit
   [`46e45c28ae8bdb3271fffbbfe2c484dc6ac40aca`](https://github.com/shankarnarayanb/copilot-cli-local-memory/commit/46e45c28ae8bdb3271fffbbfe2c484dc6ac40aca).
+- **v1.1.2 — 31 August 2026:** added machine-readable citation metadata, a
+  documented design and release history, and explicit copyright attribution.
+  See the immutable [`v1.1.2` release](https://github.com/shankarnarayanb/copilot-cli-local-memory/releases/tag/v1.1.2).
 
 The external-plugin review is also public in
 [`github/awesome-copilot#2859`](https://github.com/github/awesome-copilot/issues/2859).

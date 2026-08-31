@@ -2,12 +2,14 @@
 
 All notable changes to this project are documented here.
 
-## Unreleased
+## 1.1.2 - 2026-08-31
 
 - Added machine-readable citation metadata in `CITATION.cff`.
 - Documented the project's design scope, release chronology, and relationship
   to earlier Copilot memory proposals.
 - Added the copyright holder's name to the MIT licence.
+- Prepared the project for independent preservation and citation through Zenodo
+  and Software Heritage.
 
 ## 1.1.1 - 2026-08-29
 
